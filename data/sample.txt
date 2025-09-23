@@ -1,0 +1,13 @@
+"This is a sample text file for demonstrating the LLM from scratch project.
+
+It contains some example text that can be used for training language models.
+
+The goal is to build a large language model from scratch using Python and PyTorch.
+
+This repository will contain implementations of various components like:
+- Tokenization
+- Model architecture (transformers)
+- Training loops
+- Evaluation methods
+
+We'll start with simple implementations and gradually build up to more complex architectures."
