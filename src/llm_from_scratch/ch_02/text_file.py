@@ -38,19 +38,19 @@ class TextFile:
         return self.raw_text[:n]
 
 
-# if __name__ == "__main__":
-#     url = ("https://raw.githubusercontent.com/rasbt/"
-#            "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
-#            "the-verdict.txt")
-#     file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'the-verdict.txt')
+if __name__ == "__main__":
+    url = ("https://raw.githubusercontent.com/rasbt/"
+           "LLMs-from-scratch/main/ch02/01_main-chapter-code/"
+           "the-verdict.txt")
+    file_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'the-verdict.txt')
 
-    # tf = TextFile(url, file_path)
+    tf = TextFile(url, file_path)
 
     # you can either explicitly download, then load:
-    # tf.download()
-    # tf.load()
-    #
-    # # or just call load() and it will download if missing:
-    # tf.load()
-    # print("Total number of characters:", tf.char_count())
-    # print(tf.preview(99))
+    tf.download()
+    tf.load()
+
+    # or just call load() and it will download if missing:
+    tf.load()
+    print("Total number of characters:", tf.char_count())
+    print(tf.preview(99))

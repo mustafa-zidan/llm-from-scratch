@@ -16,6 +16,7 @@ dependencies = [
     "numpy>=2.3.3",
     "torch>=2.8.0",
     "matplotlib>=3.10.6",
+    "tiktoken>=0.11.0"
 ]
 
 [project.optional-dependencies]
@@ -24,6 +25,9 @@ dev = [
     "black>=25.9.0",
     "flake8>=7.3.0",
     "jupyter>=1.1.1",
+    "jupyterlab>=4.4.9",
+    "notebook>=7.4.7",
+    "voila>=0.5.11",
 ]
 
 [build-system]
@@ -33,6 +37,11 @@ build-backend = "hatchling.build"
 [tool.setuptools.packages.find]
 where = "."
 include = ["llm_from_scratch*"]
+
+[dependency-groups]
+dev = [
+    "notebook>=7.4.7",
+]
 
 [project.urls]
 Homepage = "https://github.com/mustafa-zidan/llm-from-scratch"
